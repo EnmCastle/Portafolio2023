@@ -18,7 +18,7 @@ function PageTransitionEvent() {
       // Show target section based on button data-id attribute
       let targetSection = document.querySelector(`#${this.dataset.id}`);
       targetSection.classList.add('active');
-    });
+    });   // prube de visual commit
   }
 }
 

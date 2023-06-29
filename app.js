@@ -8,16 +8,8 @@ function PageTransitionEvent() {
   for (let i = 0; i < sectBtn.length; i++) {
     sectBtn[i].addEventListener('click', function() {
       let currentBtn = document.querySelector('.active-btn');
-      currentBtn.classList.remove('active-btn');
-      this.classList.add('active-btn');
-      
-      // Hide current section
-      let currentSection = document.querySelector('.section.active');
-      currentSection.classList.remove('active');
-      
-      // Show target section based on button data-id attribute
-      let targetSection = document.querySelector(`#${this.dataset.id}`);
-      targetSection.classList.add('active');
+      currentBtn.classList.toggle('active-btn');
+      this.classList.toggle('active-btn');      
     });   
   }
 }

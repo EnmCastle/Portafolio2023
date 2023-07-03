@@ -6,17 +6,17 @@
 }
 
 :root {
-    --color-primary: hsl(227, 26%, 13%);
-    --color-secondary: #ac1e0b;
-    --color-white: #f0f0f0;
-    --color-black: #dbd8d8;
-    --color-grey0: #f8f8f8;
-    --color-grey-1: #dbe1e8;
-    --color-grey-2: #b2becd;
-    --color-grey-3: #6c7983;
-    --color-grey-4: #454e56;
-    --color-grey-5: #2a2e35;
-    --color-grey-6: #12181b;
+    --color-primary: #191d2b;
+  --color-secondary: #c02424;
+  --color-white: #FFFFFF;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #dbe1e8;
+  --color-grey-2: #b2becd;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #2a2e35;
+  --color-grey-6: #12181b;
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
   }
@@ -40,6 +40,7 @@ header{
     height: 100vh;
     color: var(--color-white);
     overflow: hidden;
+    padding: 0 !important;
 }
 
 section{
@@ -55,12 +56,6 @@ section{
     transform: translateY(-100%) scale (0);
     background-color: var(--color-primary);
     transition: all .4s ease-in-out;
-}
-
-.sec1{
-    display: none;
-    transform: translateY(0) scale(1);
-    background-color: rgb(32, 114, 52);
 }
 
 .sec2{
@@ -84,7 +79,7 @@ section{
 .sec5{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: rgb(22, 15, 63);
+    background-color: rgb(161, 49, 77);
 }
 
 

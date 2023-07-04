@@ -43,43 +43,38 @@ header{
     padding: 0 !important;
 }
 
-section{
+
+.section{
     min-height: 100vh;
     width: 100%;
     position: absolute;
     left: 0;
     top: 0;
     padding: 3rem 18rem;
-}
-
-.section{
     transform: translateY(-100%) scale (0);
     background-color: var(--color-primary);
     transition: all .4s ease-in-out;
 }
 
-.sec2{
-    display: none;
-    transform: translateY(0) scale(1);
-    background-color: rgb(54, 132, 184);
+#about {
+background-color: rgb(54, 132, 184);
 }
 
-.sec3{
-    display: none;
-    transform: translateY(0) scale(1);
+#portfolio {
     background-color: rgb(48, 138, 138);
 }
 
-.sec4{
-    display: none;
-    transform: translateY(0) scale(1);
-    background-color: slateblue;
+#blogs {
+   background-color: slateblue;
 }
 
-.sec5{
+#contact {
+   background-color: rgb(161, 49, 77);
+}
+
+.sec{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: rgb(161, 49, 77);
 }
 
 
@@ -93,8 +88,6 @@ section{
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
-
-
 }
 
  .active-btn{
@@ -136,7 +129,14 @@ i{
     pointer-events: none;
 }
 
-section.active {
-    transform: translateY(0) scale(1);
-    opacity: 1;
+
+
+.active {
+    display: block;
+    animation: appear 1s ease-in-out;
+    transform: translateY(0) scaleY(1);
+    @keyframes appear {
+        0%{ transform: translateY(-100%) scaleY(0); }
+        100%{ transform: translateY(0) scaleY(1); }
+    } 
 }

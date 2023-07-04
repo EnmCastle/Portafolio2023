@@ -17,14 +17,13 @@ function PageTransitionEvent() {
       this.classList.add('active-btn');
       
       // Hide all sections
-      sections.forEach((section) => {
-        section.style.display = 'none';
-      });
+      sections.forEach(section => section.classList.remove('active'));
       
       // Show the corresponding section
-      const targetSection = document.getElementById(id);
+      /* targetSection = document.getElementById(id); */
+      const targetSection = document.querySelector(`#${id}`);
       if (targetSection) {
-        targetSection.style.display = 'block';
+       targetSection.classList.add('active');
       }
     });
   });

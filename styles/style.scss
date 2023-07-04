@@ -140,3 +140,10 @@ i{
         100%{ transform: translateY(0) scaleY(1); }
     } 
 }
+
+//content header
+
+.hContent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
